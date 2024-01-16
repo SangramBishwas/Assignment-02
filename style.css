@@ -147,7 +147,7 @@
  .description {
      color: var(--primary-color);
      font-size: 1rem;
-     font-style: normal;
+     text-align: center;
      font-weight: 400;
      margin-top: 24px;
  }
@@ -183,6 +183,41 @@
      top: 30%;
      left: 45%;
      font-size: 1.75rem;
+ }
+
+ .services {
+     display: flex;
+     gap: 100px;
+     justify-content: space-evenly;
+     align-items: center;
+ }
+
+ .service-one {
+     border-radius: 16px;
+     border: 1px solid #fbb56333;
+     background: #fbb5630d;
+     padding: 32px;
+ }
+
+ .service-two {
+     border-radius: 16px;
+     border: 1px solid #29cef633;
+     background: #29cef60d;
+     padding: 32px;
+ }
+
+ .service-three {
+     width: 500px;
+     border-radius: 16px;
+     border: 1px solid #fbb56333;
+     background: #fbb5630d;
+     padding: 32px;
+     margin-top: 24px;
+ }
+
+ .services img {
+     width: 64px;
+     height: 64px;
  }
 
  @media screen and (max-width: 600px) {
@@ -221,6 +256,10 @@
      nav ul li {
          padding-bottom: 10px;
      }
+
+     main {
+        margin: 20px;
+    }
 
      .banner {
          width: 335px;
@@ -261,16 +300,25 @@
          flex-direction: column;
      }
 
-     
- .img-title {
-    top: 20%;
-    left: 35%;
-}
+
+     .img-title {
+         top: 20%;
+         left: 35%;
+     }
 
 
      .child>img {
          width: 335px;
          height: 176px;
+     }
+
+     .services {
+         flex-direction: column;
+         gap: 24px;
+     }
+
+     .service-three {
+        width: 85%;
      }
 
  }
