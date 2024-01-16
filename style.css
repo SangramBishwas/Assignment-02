@@ -37,12 +37,13 @@
  }
 
  .description {
-    color: var(--primary-color);
-    font-size: 1rem;
-    text-align: center;
-    font-weight: 400;
-    margin-top: 24px;
-}
+     color: var(--primary-color);
+     font-size: 1rem;
+     text-align: center;
+     font-weight: 400;
+     margin-top: 24px;
+ }
+
  /* Header Section Styles */
 
  .heading {
@@ -51,9 +52,10 @@
      align-items: center;
  }
 
- header{
-    margin: 20px 120px;
+ header {
+     margin: 20px 120px;
  }
+
  .website-title {
      color: #131318;
      font-size: 36px;
@@ -62,6 +64,15 @@
 
  .next-part {
      color: #FF5400;
+ }
+
+ #bar div {
+     display: none;
+     width: 2rem;
+     height: 3px;
+     margin: 5px 0;
+     background-color: #131318;
+     cursor: pointer;
  }
 
  nav>ul {
@@ -83,24 +94,13 @@
      font-weight: 700;
  }
 
- header .side-bar {
-     cursor: pointer;
-     display: none;
- }
-
- header .side-bar div {
-     width: 1.5rem;
-     height: 3px;
-     margin: 5px 0;
-     background: #131318;
- }
-
  /* banner section styles */
  main {
      margin: 50px 120px;
  }
- section{
-    margin-top: 100px;
+
+ section {
+     margin-top: 100px;
  }
 
  .banner {
@@ -110,7 +110,7 @@
      width: 1170px;
      height: 500px;
      text-align: center;
-     margin: auto 50px; 
+     margin: auto 50px;
  }
 
  .banner-content {
@@ -154,8 +154,8 @@
      margin-top: 100px;
  }
 
- .btn{
-    margin-top: 25px;
+ .btn {
+     margin-top: 25px;
  }
 
  .tour {
@@ -237,138 +237,181 @@
      width: 64px;
      height: 64px;
  }
+
  /* I creat the section five */
-.five > h3{
-    margin-bottom: 50px;
-}
- .discount{
-    display: flex;
-    justify-content: space-between;
+ .five>h3 {
+     margin-bottom: 50px;
  }
- .parent img{
-    max-width: 100%;
-    display: block;
-    opacity: 1;
-    transition: 0.5s;
-}
- .parent:hover img{
-   transform: scale(1.2); 
-}
-.parent{
-    text-align: center;
-    background:#F97F51;
-    color: #fff;
-    width: 300px;
-    /* margin: 30px auto; */
-    border-radius: 16px;
-    position: relative;
-    overflow: hidden;
-}
-.parent h2{
-    font-weight: 700;
-    padding: 15px 5px;
-    color: aqua;
-    font-size: 35px;
-    margin-bottom: 0;
-}
 
-.parent p{
-    padding: 10px;
-}
-.parent a{
-    display: inline-block;
-    font-family: sans-serif;
-    background: var(--primary-color);
-    color: var(--white-color);
-    border-radius: 5px;
-    margin-bottom: 25px;
-    padding: 12px 25px;
-    text-decoration: none;
-}
+ .discount {
+     display: flex;
+     justify-content: space-between;
+ }
 
-.children{
-    padding: 2%;
-    position: absolute;
-    width: 96%;
-    height: 98%;
-    top: 0;
-    left: -500px;
-    z-index: 9;
-    transition: 0.9s;
-}
-.children::after{
-    background:#F97F51;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    content: '';
-    top: 0;
-    left: 0;
-    opacity: 0.5;
-    z-index: -1;
-}
-.parent:hover .children{
-    left: 0;
-}
+ .parent img {
+     max-width: 100%;
+     display: block;
+     opacity: 1;
+     transition: 0.5s;
+ }
 
-footer{
-    margin: 0;
-    text-align: center;
-    background: #1313181a;
-}
+ .parent:hover img {
+     transform: scale(1.2);
+ }
 
-.footer-content{
-    padding: 100px 300px;
-}
+ .parent {
+     text-align: center;
+     background: #F97F51;
+     color: #fff;
+     width: 300px;
+     /* margin: 30px auto; */
+     border-radius: 16px;
+     position: relative;
+     overflow: hidden;
+ }
 
-.footer-content img{
-    margin: 10px 30px 40px 0;
-}
-.footer-content .copyright{
-    margin-top: 50px;
-}
-     /* Responsive Design */
+ .parent h2 {
+     font-weight: 700;
+     padding: 15px 5px;
+     color: aqua;
+     font-size: 35px;
+     margin-bottom: 0;
+ }
 
- @media screen and (max-width: 576px) {
+ .parent p {
+     padding: 10px;
+ }
 
-     body {
-         margin: 10px;
+ .parent a {
+     display: inline-block;
+     font-family: sans-serif;
+     background: var(--primary-color);
+     color: var(--white-color);
+     border-radius: 5px;
+     margin-bottom: 25px;
+     padding: 12px 25px;
+     text-decoration: none;
+ }
+
+ .children {
+     padding: 2%;
+     position: absolute;
+     width: 96%;
+     height: 98%;
+     top: 0;
+     left: -500px;
+     z-index: 9;
+     transition: 0.9s;
+ }
+
+ .children::after {
+     background: #F97F51;
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     content: '';
+     top: 0;
+     left: 0;
+     opacity: 0.5;
+     z-index: -1;
+ }
+
+ .parent:hover .children {
+     left: 0;
+ }
+
+
+ .six {
+     display: flex;
+     justify-content: space-evenly;
+ }
+
+ .column-one {
+     border-radius: 16px;
+     border: 1px solid #FF5400;
+     padding: 40px;
+ }
+
+ .news {
+     text-align: left;
+ }
+
+ .column-one .form {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+ }
+
+ .form input {
+     border: none;
+     border-radius: 8px;
+     background: #1313180d;
+     padding: 16px 20px;
+ }
+
+ .column-two {
+     position: relative;
+ }
+
+ .column-two .card {
+     position: absolute;
+     width: 324px;
+     transform: rotate(-19.628deg);
+     top: 60%;
+     left: 45%;
+ }
+
+ .card>h6 {
+     color: #FFF;
+     text-align: center;
+     font-size: 1.5rem;
+     font-weight: 400;
+ }
+
+ .card>h3 {
+     color: #FFF;
+     text-align: center;
+     font-size: 2rem;
+     font-weight: 800;
+ }
+
+ footer {
+     margin: 0;
+     text-align: center;
+     background: #1313181a;
+ }
+
+ .footer-content {
+     padding: 100px 300px;
+ }
+
+ .footer-content img {
+     margin: 10px 30px 40px 0;
+ }
+
+ .footer-content .copyright {
+     margin-top: 50px;
+ }
+
+ /* Responsive Design */
+
+ @media screen and (max-width: 600px) {
+
+     header {
+         margin: 20px;
      }
 
-     .heading {
-         justify-content: space-around;
+     nav ul {
+         display: none;
      }
 
-     header .side-bar {
+     nav #bar div {
          display: block;
-     }
-
-     header nav {
-         position: absolute;
-         right: -100%;
-         top: 5%;
-         width: 35%;
-         height: 80%;
-         padding: 10%;
-         transition: 0.5s;
-     }
-
-     header #bar:checked~nav {
-         right: 20%;
-     }
-
-     nav>ul {
-         display: block;
-         text-align: right;
-     }
-
-     nav ul li {
-         padding-bottom: 10px;
      }
 
      main {
-        margin: 20px;
-    }
+         margin: 20px;
+     }
 
      .banner {
          width: 335px;
@@ -428,17 +471,37 @@ footer{
      }
 
      .service-three {
-        width: 85%;
+         width: 85%;
      }
 
-     .discount{
-      flex-direction: column;
-      gap: 25px;
-      margin-left: 10%;
+     .discount {
+         flex-direction: column;
+         gap: 25px;
+         margin-left: 10%;
      }
 
-     .footer-content{
-        padding: 30px 40px;
-    }
+     .column-two img {
+         width: 335px;
+         height: 300px;
+     }
+
+     .six {
+         flex-direction: column;
+         gap: 24px;
+     }
+
+     .column-two .card {
+         width: 150px;
+         height: 50px;
+         left: 40%;
+     }
+
+     .card>h6, .card>h3 {
+        font-size: 1rem;
+     }
+
+     .footer-content {
+         padding: 30px 40px;
+     }
 
  }
