@@ -55,45 +55,53 @@
  }
 
  header .side-bar div {
-     width: 2rem;
+     width: 1.5rem;
      height: 3px;
      margin: 5px 0;
      background: #131318;
  }
 
+ .banner {
+     border-radius: 16px;
+     background: url('./Images/Group13.png');
+     background-repeat: no-repeat;
+ }
+
  @media screen and (max-width: 600px) {
 
-    body {
-        margin: 10px;
-        width: 100%;
-    }
+     body {
+         margin: 10px;
+     }
 
-    .heading {
-        justify-content: space-around;
-    }
+     .heading {
+         justify-content: space-around;
+     }
 
-    header .side-bar{
-        display: block;
-    }
-  
-    header nav{
-        position: absolute;
-        left: 100%;
-        width: 30%;
-        top: 3%;
-        height: 80%;
-        padding: 10%;
-        transition: 0.5s;
-    }
-    #bar:checked ~ nav{
-        left: 50%;
-    }
-    nav>ul{
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-    nav ul li{
-        padding-bottom: 10px;
-    }
+     header .side-bar {
+         display: block;
+     }
+
+     header nav {
+         position: absolute;
+         left: 100%;
+         width: 30%;
+         top: 5%;
+         height: 80%;
+         padding: 10%;
+         transition: 0.5s;
+     }
+
+     #bar:checked~nav {
+         left: 40%;
+     }
+
+     nav>ul {
+         display: block;
+         width: 100%;
+         text-align: center;
+     }
+
+     nav ul li {
+         padding-bottom: 10px;
+     }
  }
