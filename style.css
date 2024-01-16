@@ -1,5 +1,7 @@
  @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700;800&display=swap');
 
+ /* shared styles */
+
  :root {
      --white-color: #FFF;
      --primary-color: #131318b3;
@@ -13,6 +15,28 @@
  body {
      margin: 20px 120px;
  }
+
+
+
+ .primary-button {
+     border: none;
+     border-radius: 8px;
+     background: #FF5400;
+     color: var(--white-color);
+     font-size: 1rem;
+     font-weight: 700;
+     padding: 16px;
+     cursor: pointer;
+ }
+
+ .section-title {
+     color: #131318;
+     text-align: center;
+     font-size: 40px;
+     font-weight: 800;
+ }
+
+ /* Header Section Styles */
 
  .heading {
      display: flex;
@@ -61,11 +85,75 @@
      background: #131318;
  }
 
+ /* banner section styles */
+
  .banner {
      border-radius: 16px;
-     background: url('./Images/Group13.png');
+     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./Images/Group13.png');
      background-repeat: no-repeat;
+     width: 1170px;
+     height: 500px;
+     margin: 50px;
+     text-align: center;
  }
+
+ .banner-content {
+     padding: 80px 200px;
+ }
+
+ .bannner-title {
+     color: var(--white-color);
+     font-size: 4rem;
+     font-weight: 800;
+ }
+
+ .description {
+     color: var(--white-color);
+     font-size: 1rem;
+     font-weight: 400;
+ }
+
+ .selection-form {
+     display: flex;
+     justify-content: space-between;
+     border-radius: 8px;
+     background: #ffffff4d;
+     gap: 24px;
+     padding: 24px;
+     margin-top: 3rem;
+ }
+
+
+ .selection-form>input,
+ select {
+     border: none;
+     border-radius: 8px;
+     padding: 16px;
+ }
+
+ .two {
+     display: flex;
+     align-items: center;
+     gap: 50px;
+ }
+
+ .tour {
+     text-align: left;
+ }
+
+ .description {
+     color: var(--primary-color);
+     font-size: 1rem;
+     font-style: normal;
+     font-weight: 400;
+     margin-top: 24px;
+ }
+
+ .content {
+     color: var(--secondary-color);
+     text-align: left;
+ }
+
 
  @media screen and (max-width: 600px) {
 
@@ -83,25 +171,60 @@
 
      header nav {
          position: absolute;
-         left: 100%;
-         width: 30%;
+         right: -100%;
          top: 5%;
+         width: 35%;
          height: 80%;
          padding: 10%;
          transition: 0.5s;
      }
 
-     #bar:checked~nav {
-         left: 40%;
+     header #bar:checked~nav {
+         right: 20%;
      }
 
      nav>ul {
          display: block;
-         width: 100%;
-         text-align: center;
+         text-align: right;
      }
 
      nav ul li {
          padding-bottom: 10px;
      }
+
+     .banner {
+         width: 350px;
+         height: 483px;
+         margin: 10px 5px;
+     }
+
+
+     .banner-content {
+         padding: 10px;
+
+     }
+
+     .selection-form {
+         flex-direction: column;
+         margin: 0 0 10px;
+     }
+
+     .bannner-title {
+         font-size: 1.5rem;
+     }
+
+     .two {
+         flex-direction: column-reverse;
+         gap: 20px;
+     }
+
+     .content-img img{
+         width: 335px;
+         height: 342px;
+     }
+
+     .tour {
+        text-align: center;
+    }
+
  }

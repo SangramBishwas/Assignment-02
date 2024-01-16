@@ -1,38 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Zone</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div class="heading">
-        <h2 class="website-title">Travel <span class="next-part">Zone</span></h2>
-        <input type="checkbox" id="bar" hidden>
-        <label for="bar" class="side-bar">
-            <div></div>
-            <div></div>
-            <div></div>
-        </label>
-        <nav>
-            <ul>
-                <li><a class="first-child" href="#">Home</a></li>
-                <li><a href="#">Packages</a></li>
-                <li><a href="#">Testimonial</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
- <div class="banner">
-    <!-- <h2 class="bannner-title">Explore Your Travel</h2>
-    <p class="description">Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In et odio enim ac quis sapien urna eu phasellus.</p>
-    <form class="selection-form"><input type="text"><input type="text"><input type="text"><input type="text">
-  </form> -->
- </div>
-
+            <h2 class="website-title">Travel <span class="next-part">Zone</span></h2>
+            <input type="checkbox" id="bar" hidden>
+            <label for="bar" class="side-bar">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <nav>
+                <ul>
+                    <li><a class="first-child" href="#">Home</a></li>
+                    <li><a href="#">Packages</a></li>
+                    <li><a href="#">Testimonial</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+    <section class="one">
+        <div class="banner">
+            <div class="banner-content">
+                <h2 class="bannner-title">Explore Your Travel</h2>
+                <p class="description">Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing.
+                    In et odio enim ac quis sapien urna eu phasellus.</p>
+                <form class="selection-form">
+                    <input type="text" placeholder="Where you go">
+                    <select name="Location" class="location">
+                        <option value="When"><a href="">When</a></option>
+                        <option value="Maldiv"><a href="">Maldiv</a></option>
+                        <option value="Srilanka"><a href="">Srilanka</a></option>
+                        <option value="Indonasia"><a href="">Indonasia</a></option>
+                        <option value="North America"><a href="">North America</a></option>
+                        <option value="Kashmir"><a href="">Kashmir</a></option>
+                        <option value="Bangladesh"><a href="">Bangladesh</a></option>
+                        <option value="Bandarban"><a href="">Bandarban</a></option>
+                    </select>
+                    <select name="Type" id="aria-type">
+                        <option value="select">select type</option>
+                        <option value="Sea">Sea Aria</option>
+                        <option value="Mountain">Mountain Aria</option>
+                        <option value="Forest">Forest Atia</option>
+                    </select>
+                    <button class="primary-button">Find Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="two">
+        <div class="tour-content">
+            <h3 class="section-title tour">Our Popular Tours</h3>
+            <p class="content description">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit
+                massa. Sodales dictumst nec nibh pellentesque.</p>
+            <ul class="content description">
+                <li>Tempus euismod lacus mauris dignissim quis in ultrices. Magna nullam odio neque diam. Sociis erat
+                    at.</li>
+                <li>Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse
+                    nullam.</li>
+            </ul>
+            <p class="content description">Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet
+                et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. Id
+                bibendum nunc senectus semper tincidunt.</p>
+            <button class="primary-button">Read More</button>
+        </div>
+        <div class="content-img">
+            <img src="Images/Rectangle 4.png" alt="">
+        </div>
+    </section>
 </body>
+
 </html>
