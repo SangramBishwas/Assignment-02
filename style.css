@@ -94,10 +94,11 @@
      font-weight: 700;
  }
 
- /* banner section styles */
  main {
-     margin: 50px 120px;
- }
+    margin: 50px 120px;
+}
+
+ /* banner section styles */
 
  section {
      margin-top: 100px;
@@ -127,6 +128,7 @@
      color: var(--white-color);
      font-size: 1rem;
      font-weight: 400;
+     margin: 24px auto;
  }
 
  .selection-form {
@@ -146,6 +148,8 @@
      border-radius: 8px;
      padding: 16px;
  }
+
+     /* Section Two Styles */
 
  .two {
      display: flex;
@@ -175,6 +179,8 @@
      text-align: left;
  }
 
+     /* Section Three Styles */
+
  .three {
      margin-top: 100px;
      text-align: center;
@@ -198,10 +204,12 @@
  .img-title {
      position: absolute;
      color: var(--white-color);
-     top: 30%;
-     left: 45%;
+     top: 40%;
+     right: 35%;
      font-size: 1.75rem;
  }
+
+     /* Section Four Styles */
 
  .services {
      display: flex;
@@ -239,13 +247,14 @@
  }
 
  /* I creat the section five */
+
  .five>h3 {
      margin-bottom: 50px;
  }
 
  .discount {
      display: flex;
-     justify-content: space-between;
+     justify-content: space-evenly;
  }
 
  .parent img {
@@ -301,7 +310,7 @@
      top: 0;
      left: -500px;
      z-index: 9;
-     transition: 0.9s;
+     transition: 0.5s;
  }
 
  .children::after {
@@ -455,8 +464,8 @@
 
 
      .img-title {
-         top: 20%;
          left: 35%;
+         font-size: 1.5rem;
      }
 
 
